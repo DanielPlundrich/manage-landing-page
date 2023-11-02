@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body class="overflow-x-hidden">
+  <header>
+    <img class="absolute -right-48 -top-48 -z-10"  src="../images/bg-tablet-pattern.svg" alt="">
+    <img class="absolute w-96 -right-56 -top-[-60rem] -z-10"  src="../images/bg-tablet-pattern.svg" alt="">
+    <nav class="flex justify-between">
+      <div>
+        <a href=""><img src="../images/logo-dark.svg" alt=""></a>
+      </div>
+      <div>
+        <ul class="hidden md:flex">
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Community</a></li>
+        </ul>
+      </div>
+      <div class="hidden md:block">
+        <a href="">Get Started</a>
+      </div>
+      <div class="md:hidden">
+        <img class="cursor-pointer" src="../images/icon-hamburger.svg" alt="">
+      </div>
+    </nav>
+    <div class="flex flex-col-reverse md:flex-row">
+      <div>
+        <h1 class="text-3xl">Bring everyone together to build better products.</h1>
+        <p>Manage makes it simple for software teams to plan day-to-day
+          tasks while keeping the larger team goals in view.</p>
+        <a href="">Get Started</a>
+      </div>
+      <div>
+        <img src="../images/illustration-intro.svg" alt="">
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="flex flex-col">
+      <div>
+        <h2>What’s different about Manage?</h2>
+        <p>Manage provides all the functionality your team needs, without
+          the complexity. Our software is tailor-made for modern digital
+          product teams. </p>
+      </div>
+      <div class="flex flex-col space-y-10">
+        <div class="flex flex-col md:flex-row">
+          <div>
+            <span>01</span>
+            <h3 class="inline md:hidden">Track company-wide progress</h3>
+          </div>
+          <div>
+            <h3 class="hidden md:inline">Track company-wide progress</h3>
+            <p>See how your day-to-day tasks fit into the wider vision. Go from 
+              tracking progress at the milestone level all the way done to the 
+              smallest of details. Never lose sight of the bigger picture again.</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div>
+            <span>02</span>
+            <h3 class="inline md:hidden">Advanced built-in reports</h3>
+          </div>
+          <div>
+            <h3 class="hidden md:inline">Advanced built-in reports</h3>
+            <p>Set internal delivery estimates and track progress toward company 
+              goals. Our customisable dashboard helps you build out the reports 
+              you need to keep key stakeholders informed.</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div>
+            <span>03</span>
+            <h3 class="inline md:hidden">Everything you need in one place</h3>
+          </div>
+          <div>
+            <h3 class="hidden md:inline">Everything you need in one place</h3>
+            <p>Stop jumping from one service to another to communicate, store files, 
+              track tasks and share documents. Manage offers an all-in-one team 
+              productivity solution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <h2>What they’ve said</h2>
+      <div class="flex">
+        <div class="flex flex-col items-center">
+          <img src="../images/avatar-anisha.png" alt="">
+          <h3>Anisha Li</h3>
+          <p>“Manage has supercharged our team’s workflow. The ability to maintain 
+            visibility on larger milestones at all times keeps everyone motivated.”</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../images/avatar-ali.png" alt="">
+          <h3>Ali Bravo</h3>
+          <p>“We have been able to cancel so many other subscriptions since using 
+            Manage. There is no more cross-channel confusion and everyone is much 
+            more focused.”</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../images/avatar-richard.png" alt="">
+          <h3>Richard Watts</h3>
+          <p> “Manage allows us to provide structure and process. It keeps us organized 
+            and focused. I can’t stop recommending them to everyone I talk to!”</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="../images/avatar-shanai.png" alt="">
+          <h3>Shanai Gough</h3>
+          <p>“Their software allows us to track, manage and collaborate on our projects 
+            from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+        </div>
+      </div>
+      <div>
+        <a href="">Get Started</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="flex justify-between bg-BrightRed">
+      <h2 class="text-3xl">Simplify how your team works today.</h2>
+      <a href="">Get Started</a>
+    </div>
+    <nav class="flex flex-col bg-black text-white p-10 items-center md:flex-row justify-between space-y-10 md:space-y-0">
+      <div class="order-1 md:hidden md:h-28">
+        <form action="index.html">
+          <div>
+            <input type="text" placeholder="Updates in your inbox…">
+            <button type="submit">Go</button>
+          </div>
+        </form>
+        <div class="hidden">
+          <span>Copyright 2020. All Rights Reserved</span>
+        </div>
+      </div>
+      <div class="order-2 md:order-1 flex-col-reverse flex md:flex-col md:justify-between md:h-28 md:w-[30%]">
+        <a href="" class="max-w-max"><img src="../images/logo-light.svg" alt="" class="text-white"></a>
+        <div class="flex justify-center md:justify-start">
+          <a href="" class="flex-shrink-0"><img src="../images/icon-facebook.svg" alt=""></a>
+          <a href="" class="flex-shrink-0"><img src="../images/icon-youtube.svg" alt=""></a>
+          <a href="" class="flex-shrink-0"><img src="../images/icon-twitter.svg" alt=""></a>
+          <a href="" class="flex-shrink-0"><img src="../images/icon-pinterest.svg" alt=""></a>
+          <a href="" class="flex-shrink-0"><img src="../images/icon-instagram.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="flex order-1 md:h-28 md:justify-between md:w-[40%] md:mx-[10%] mx-0">
+        <div>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col order-3 md:h-28 md:w-[30%] md:justify-between md:items-end">
+        <form action="index.html" class="hidden md:block">
+          <div>
+            <input type="text" placeholder="Updates in your inbox…">
+            <button type="submit">Go</button>
+          </div>
+        </form>
+        <div class="w-full md:text-right text-xs">
+          <span>Copyright 2020. All Rights Reserved</span>
+        </div>
+      </div>
+    </nav>
+  </footer>
+
+  <div class="attribution text-center bg-black text-white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
