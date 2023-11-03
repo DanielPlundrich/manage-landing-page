@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="../dist/output.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Manage landing page</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -14,10 +16,10 @@
   </style> -->
 </head>
 <body class="overflow-x-hidden">
-  <header>
-    <img class="absolute -right-48 -top-48 -z-10"  src="../images/bg-tablet-pattern.svg" alt="">
-    <img class="absolute w-96 -right-56 -top-[-60rem] -z-10"  src="../images/bg-tablet-pattern.svg" alt="">
-    <nav class="flex justify-between">
+  <header class="side-gap-m">
+    <img class="absolute -right-28 -top-20 -z-10 min-w-[35rem]"  src="../images/bg-tablet-pattern.svg" alt="">
+    <img class="absolute -right-48 -top-[-40rem] w-96 -z-10"  src="../images/bg-tablet-pattern.svg" alt="">
+    <nav class="flex justify-between mt-16">
       <div>
         <a href=""><img src="../images/logo-dark.svg" alt=""></a>
       </div>
@@ -38,58 +40,58 @@
       </div>
     </nav>
     <div class="flex flex-col-reverse md:flex-row">
-      <div>
-        <h1 class="text-3xl">Bring everyone together to build better products.</h1>
-        <p>Manage makes it simple for software teams to plan day-to-day
+      <div class=" flex justify-center flex-col items-center text-center">
+        <h1 class="text-5xl text-DarkBlue font-bold leading-tight">Bring everyone together to build better products.</h1>
+        <p class="text-DarkGrayishBlue mt-3 leading-loose">Manage makes it simple for software teams to plan day-to-day
           tasks while keeping the larger team goals in view.</p>
-        <a href="">Get Started</a>
+        <a href="#" class="rounded-full bg-BrightRed text-white px-6 py-4 mt-10 inline-block">Get Started</a>
       </div>
-      <div>
-        <img src="../images/illustration-intro.svg" alt="">
+      <div class="flex justify-center mt-20 ">
+        <img src="../images/illustration-intro.svg" alt="" class="w-[442px]">
       </div>
     </div>
   </header>
   <main>
     <div class="flex flex-col">
-      <div>
-        <h2>What’s different about Manage?</h2>
-        <p>Manage provides all the functionality your team needs, without
+      <div class="side-gap-m">
+        <h2 class="text-4xl text-DarkBlue text-center font-bold mt-28 leading-tight">What’s different about Manage?</h2>
+        <p class="text-center text-DarkGrayishBlue mt-8 leading-loose">Manage provides all the functionality your team needs, without
           the complexity. Our software is tailor-made for modern digital
           product teams. </p>
       </div>
-      <div class="flex flex-col space-y-10">
-        <div class="flex flex-col md:flex-row">
-          <div>
-            <span>01</span>
-            <h3 class="inline md:hidden">Track company-wide progress</h3>
+      <div class="side-gap-left-m flex flex-col space-y-10">
+        <div class="flex flex-col md:flex-row mt-14">
+          <div class="bg-VeryPaleRed font-medium flex items-center rounded-l-full">
+            <span class="bg-BrightRed px-6 py-2 rounded-full text-white">01</span>
+            <h3 class="inline text-DarkBlue ml-3 md:hidden font-bold">Track company-wide progress</h3>
           </div>
           <div>
             <h3 class="hidden md:inline">Track company-wide progress</h3>
-            <p>See how your day-to-day tasks fit into the wider vision. Go from 
+            <p class="mt-4 text-DarkGrayishBlue leading-loose">See how your day-to-day tasks fit into the wider vision. Go from
               tracking progress at the milestone level all the way done to the 
               smallest of details. Never lose sight of the bigger picture again.</p>
           </div>
         </div>
         <div class="flex flex-col md:flex-row">
-          <div>
-            <span>02</span>
-            <h3 class="inline md:hidden">Advanced built-in reports</h3>
+          <div class="bg-VeryPaleRed font-medium flex items-center rounded-l-full">
+            <span class="bg-BrightRed px-6 py-2 rounded-full text-white">02</span>
+            <h3 class="inline text-DarkBlue ml-3 md:hidden font-bold">Advanced built-in reports</h3>
           </div>
           <div>
             <h3 class="hidden md:inline">Advanced built-in reports</h3>
-            <p>Set internal delivery estimates and track progress toward company 
+            <p class="mt-4 text-DarkGrayishBlue leading-loose">Set internal delivery estimates and track progress toward company 
               goals. Our customisable dashboard helps you build out the reports 
               you need to keep key stakeholders informed.</p>
           </div>
         </div>
         <div class="flex flex-col md:flex-row">
-          <div>
-            <span>03</span>
-            <h3 class="inline md:hidden">Everything you need in one place</h3>
+          <div class="bg-VeryPaleRed font-medium flex items-center rounded-l-full">
+            <span class="bg-BrightRed px-6 py-2 rounded-full text-white">03</span>
+            <h3 class="inline text-DarkBlue ml-3 md:hidden font-bold">Everything you need in one place</h3>
           </div>
           <div>
             <h3 class="hidden md:inline">Everything you need in one place</h3>
-            <p>Stop jumping from one service to another to communicate, store files, 
+            <p class="mt-4 text-DarkGrayishBlue leading-loose">Stop jumping from one service to another to communicate, store files, 
               track tasks and share documents. Manage offers an all-in-one team 
               productivity solution.</p>
           </div>
@@ -97,9 +99,9 @@
       </div>
     </div>
 
-    <div class="text-center">
-      <h2>What they’ve said</h2>
-      <div class="flex">
+    <div class="text-center mt-20">
+      <h2 class="text-4xl text-DarkBlue text-center font-bold mt-28 leading-tight">What they’ve said</h2>
+      <div class="flex mt-10">
         <div class="flex flex-col items-center">
           <img src="../images/avatar-anisha.png" alt="">
           <h3>Anisha Li</h3>
@@ -126,72 +128,73 @@
             from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
         </div>
       </div>
-      <div>
-        <a href="">Get Started</a>
+      <div class="mt-20">
+        <a href="" class="rounded-full bg-BrightRed text-white px-6 py-4  inline font-medium">Get Started</a>
       </div>
     </div>
   </main>
-  <footer>
-    <div class="flex justify-between bg-BrightRed">
-      <h2 class="text-3xl">Simplify how your team works today.</h2>
-      <a href="">Get Started</a>
+  <footer class="mt-20">
+    <div class="flex flex-col justify-center text-center items-center bg-BrightRed h-80 side-gap-p relative">
+      <img src="../images/bg-tablet-pattern.svg" alt="" class="absolute opacity-10 z-10 -left-80 top-9 w-[26rem]">
+      <h2 class="text-4xl text-white font-bold">Simplify how your team works today.</h2>
+      <a href="" class="rounded-full bg-white text-BrightRed px-6 py-4 mt-10 inline font-medium">Get Started</a>
     </div>
-    <nav class="flex flex-col bg-black text-white p-10 items-center md:flex-row justify-between space-y-10 md:space-y-0">
-      <div class="order-1 md:hidden md:h-28">
+    <nav class="relative z-50 flex flex-col bg-VeryDarkBlue text-white items-center md:flex-row justify-between space-y-10 md:space-y-0 side-gap-p !pt-14">
+      <div class="order-1 md:hidden md:h-28 w-full">
         <form action="index.html">
-          <div>
-            <input type="text" placeholder="Updates in your inbox…">
-            <button type="submit">Go</button>
+          <div class="space-x-2 flex justify-center">
+            <input type="email" placeholder="Updates in your inbox…" class="py-4 px-5 rounded-full text-black w-full max-w-[350px]" required>
+            <button type="submit" class="rounded-full bg-BrightRed text-white uppercase px-10 py-4 inline font-medium">Go</button>
           </div>
         </form>
         <div class="hidden">
           <span>Copyright 2020. All Rights Reserved</span>
         </div>
       </div>
-      <div class="order-2 md:order-1 flex-col-reverse flex md:flex-col md:justify-between md:h-28 md:w-[30%]">
-        <a href="" class="max-w-max"><img src="../images/logo-light.svg" alt="" class="text-white"></a>
-        <div class="flex justify-center md:justify-start">
-          <a href="" class="flex-shrink-0"><img src="../images/icon-facebook.svg" alt=""></a>
-          <a href="" class="flex-shrink-0"><img src="../images/icon-youtube.svg" alt=""></a>
-          <a href="" class="flex-shrink-0"><img src="../images/icon-twitter.svg" alt=""></a>
-          <a href="" class="flex-shrink-0"><img src="../images/icon-pinterest.svg" alt=""></a>
-          <a href="" class="flex-shrink-0"><img src="../images/icon-instagram.svg" alt=""></a>
+      <div class="order-2 md:order-1 flex-col-reverse flex md:flex-col md:justify-between md:h-28 md:w-[30%] items-center">
+        <a href="#" class="mt-14"><img src="../images/logo-light.svg" alt="" class="min-w-[146px]"></a>
+        <div class="flex justify-center md:justify-start space-x-10 mt-5">
+          <a href="#" class="flex-shrink-0"><img src="../images/icon-facebook.svg" alt="" class="w-9"></a>
+          <a href="#" class="flex-shrink-0"><img src="../images/icon-youtube.svg" alt="" class="w-9"></a>
+          <a href="#" class="flex-shrink-0"><img src="../images/icon-twitter.svg" alt="" class="w-9"></a>
+          <a href="#" class="flex-shrink-0"><img src="../images/icon-pinterest.svg" alt="" class="w-9"></a>
+          <a href="#" class="flex-shrink-0"><img src="../images/icon-instagram.svg" alt="" class="w-9"></a>
         </div>
       </div>
-      <div class="flex order-1 md:h-28 md:justify-between md:w-[40%] md:mx-[10%] mx-0">
+      <div class="flex order-1 md:h-28 md:w-[40%] md:mx-[10%] mx-0 justify-between space-x-28">
         <div>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">About Us</a></li>
+          <ul class="whitespace-nowrap space-y-4">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
           </ul>
         </div>
         <div>
-          <ul>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Community</a></li>
-            <li><a href="">Privacy Policy</a></li>
+          <ul class="whitespace-nowrap space-y-4">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
       <div class="flex flex-col order-3 md:h-28 md:w-[30%] md:justify-between md:items-end">
         <form action="index.html" class="hidden md:block">
           <div>
-            <input type="text" placeholder="Updates in your inbox…">
-            <button type="submit">Go</button>
+            <input type="email" placeholder="Updates in your inbox…" class="py-4 inline-block px-5 w-64 rounded-full" required>
+            <button type="submit" class="rounded-full bg-BrightRed text-white px-10 py-4 inline font-medium">Go</button>
           </div>
         </form>
-        <div class="w-full md:text-right text-xs">
-          <span>Copyright 2020. All Rights Reserved</span>
+        <div class="w-full md:text-right text-sm mt-5">
+          <span class="text-DarkGrayishBlue">Copyright 2020. All Rights Reserved</span>
         </div>
       </div>
     </nav>
   </footer>
 
-  <div class="attribution text-center bg-black text-white">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="attribution text-center bg-VeryDarkBlue text-white pt-10 pb-6">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
+    Coded by <a href="#">Daniel Plundrich</a>.
   </div>
 </body>
 </html>
