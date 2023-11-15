@@ -13,8 +13,18 @@
 :root{
     --side-gap: 25px;
     --side-gap-desktop: 100px;
+
 }
 
+.swiper-pagination-bullet-active {
+    background: #f25f3a !important;
+    border: 2px solid #f25f3a !important;
+}
+
+.swiper-pagination-bullet {
+    border: 2px solid #f25f3a !important;
+    opacity: 1 !important;
+}
 
 .side-gap-m{
     margin: 0 var(--side-gap);
@@ -61,6 +71,7 @@
     padding: 1rem 2.5rem;
     display: inline-block;
     white-space: nowrap;
+    box-shadow: 0px 20px 20px -20px #f25f3a;
 }
 .orange-button-style:hover{
     opacity: 0.5;
@@ -68,7 +79,7 @@
 
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
     .side-gap-m{
         margin: 0 var(--side-gap-desktop);
     }
