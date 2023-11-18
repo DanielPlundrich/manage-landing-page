@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
     spaceBetween: 25,
     centerSlide: 'true',
     pagination: {
@@ -7,7 +7,6 @@ var swiper = new Swiper(".mySwiper", {
       bulletActiveClass: 'swiper-pagination-bullet-active',
       bulletClass: 'swiper-pagination-bullet'
     },
-
 
     breakpoints:{
       0:{
@@ -22,8 +21,28 @@ var swiper = new Swiper(".mySwiper", {
 
     },
 
-    
 });
+
+
+function dropDownMenuMobile() {
+  let menuLinks = document.querySelector(".mobile-menu-dropdown-content");
+  menuLinks.style.display = (menuLinks.style.display === "block") ? "none" : "block"
+
+
+}
+
+const menuToggle = document.querySelector(".menu-toggle");
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+const closeIcon = document.querySelector(".close-icon");
+
+menuToggle.addEventListener("click", () => {
+  hamburgerIcon.style.display = (hamburgerIcon.style.display === "none") ? "block" : "none";
+  closeIcon.style.display = (closeIcon.style.display === "block") ? "none" : "block";
+
+
+});
+
+
 
 
 

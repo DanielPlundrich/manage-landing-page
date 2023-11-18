@@ -21,34 +21,44 @@
   <header class="side-gap-m">
     <img class="absolute -right-32 -top-32 -z-10 min-w-[35rem]"  src="../images/bg-tablet-pattern.svg" alt="">
     <img class="absolute -right-48 -top-[-40rem] w-96 -z-10 lg:-left-[30rem] lg:top-[64rem] lg:min-w-max"  src="../images/bg-tablet-pattern.svg" alt="">
-    <nav class="flex justify-between mt-16 items-center">
+    <nav class="flex justify-between mt-16 items-center relative">
       <div>
         <a href="#"><img src="../images/logo-dark.svg" alt="Logo" class="w-full"></a>
       </div>
       <div>
         <ul class="header-menu hidden lg:flex text-DarkBlue space-x-[2vw] whitespace-nowrap">
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Product</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Careers</a></li>
-          <li><a href="">Community</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
         </ul>
       </div>
       <div class="hidden lg:block">
         <a href="#" class="orange-button-style">Get Started</a>
       </div>
-      <div class="lg:hidden">
-        <img class="cursor-pointer" src="../images/icon-hamburger.svg" alt="Hamburger icon">
+      <div class="menu-toggle lg:hidden" onclick="dropDownMenuMobile()">
+        <img class="hamburger-icon cursor-pointer" src="../images/icon-hamburger.svg" alt="Hamburger icon" >
+        <img class="close-icon cursor-pointer hidden" src="../images/icon-close.svg" alt="Close mark">
+      </div>
+      <div class="absolute left-0 top-20 lg:hidden bg-white w-full ">
+        <ul class="mobile-menu-dropdown-content header-men whitespace-nowrap hidden text-center space-y-10 py-12 text-DarkBlue font-bold text-xl shadow-[0px_400px_800px_200px_rgba(0,0,0,0.4)] rounded-lg ">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
       </div>
     </nav>
-    <div class="flex flex-col-reverse lg:flex-row space-x-[5vw] mt-20 lg:-[70vh]">
+    <div class="flex flex-col-reverse lg:flex-row space-x-[5vw] mt-16 lg:-[70vh]">
       <div class=" flex justify-center flex-col items-center text-center lg:items-start lg:w-1/2">
-        <h1 class="text-5xl text-DarkBlue font-bold leading-tight lg:text-left lg:text-[calc(1rem+3vw)]">Bring everyone together to build better products.</h1>
+        <h1 class="text-5xl text-DarkBlue font-bold leading-tight lg:text-left lg:text-[calc(1rem+3vw)] mt-5 lg:mt-0">Bring everyone together to build better products.</h1>
         <p class="text-DarkGrayishBlue mt-3 leading-loose lg:text-left">Manage makes it simple for software teams to plan day-to-day
           tasks while keeping the larger team goals in view.</p>
         <a href="#" class="orange-button-style mt-10">Get Started</a>
       </div>
-      <div class="flex justify-center lg:w-1/2">
+      <div class="flex justify-center lg:w-1/2 relative -z-10">
         <img src="../images/illustration-intro.svg" alt="Intro illustration">
       </div>
     </div>
@@ -64,7 +74,7 @@
 
       <div class="flex flex-col space-y-10 lg:w-1/2">
         <div class="flex flex-col lg:flex-row">
-          <div class="bg-VeryPaleRed font-medium flex items-center rounded-l-full lg:bg-white lg:items-start" >
+          <div class="bg-VeryPaleRed font-medium flex items-center rounded-l-full lg:bg-transparent lg:items-start" >
             <span class="bg-BrightRed px-6 py-2 rounded-full text-white">01</span>
             <h3 class="inline text-DarkBlue ml-3 lg:hidden font-bold">Track company-wide progress</h3>
           </div>
@@ -79,7 +89,7 @@
         </div>
 
         <div class="flex flex-col lg:flex-row">
-          <div class="bg-VeryPaleRed font-medium flex items-center rounded-l-full lg:items-start lg:bg-white">
+          <div class="bg-VeryPaleRed font-medium flex items-center rounded-l-full lg:items-start lg:bg-transparent">
             <span class="bg-BrightRed px-6 py-2 rounded-full text-white">02</span>
             <h3 class="inline text-DarkBlue ml-3 lg:hidden font-bold">Advanced built-in reports</h3>
           </div>
@@ -94,7 +104,7 @@
         </div>
 
         <div class="flex flex-col lg:flex-row">
-          <div class="bg-VeryPaleRed font-medium flex items-center rounded-l-full lg:items-start lg:bg-white">
+          <div class="bg-VeryPaleRed font-medium flex items-center rounded-l-full lg:items-start lg:bg-transparent">
             <span class="bg-BrightRed px-6 py-2 rounded-full text-white">03</span>
             <h3 class="inline text-DarkBlue ml-3 lg:hidden font-bold">Everything you need in one place</h3>
           </div>
@@ -211,8 +221,8 @@
   </footer>
 
   <div class="relative z-40 attribution text-center bg-VeryDarkBlue text-white py-6">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
-    Coded by <a href="https://github.com/DanielPlundrich">Daniel Plundrich</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="hover:text-BrightRed">Frontend Mentor</a>.<br>
+    Coded by <a href="https://github.com/DanielPlundrich" class="hover:text-BrightRed">Daniel Plundrich</a>.
   </div>
 </body>
   <script src="swiper-bundle.min.js"></script>
