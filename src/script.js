@@ -1,34 +1,30 @@
 let swiper = new Swiper(".mySwiper", {
-    spaceBetween: 25,
-    centerSlide: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      color: "black",
-      bulletActiveClass: 'swiper-pagination-bullet-active',
-      bulletClass: 'swiper-pagination-bullet'
+  spaceBetween: 25,
+  centerSlide: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    color: "black",
+    bulletActiveClass: "swiper-pagination-bullet-active",
+    bulletClass: "swiper-pagination-bullet",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
-
-    breakpoints:{
-      0:{
-        slidesPerView:1,
-      },
-      780:{
-        slidesPerView:2,
-      },
-      1100:{
-        slidesPerView:3,
-      },
-
+    780: {
+      slidesPerView: 2,
     },
-
+    1100: {
+      slidesPerView: 3,
+    },
+  },
 });
-
 
 function dropDownMenuMobile() {
   let menuLinks = document.querySelector(".mobile-menu-dropdown-content");
-  menuLinks.style.display = (menuLinks.style.display === "block") ? "none" : "block"
-
-
+  menuLinks.style.display =
+    menuLinks.style.display === "block" ? "none" : "block";
 }
 
 const menuToggle = document.querySelector(".menu-toggle");
@@ -36,15 +32,8 @@ const hamburgerIcon = document.querySelector(".hamburger-icon");
 const closeIcon = document.querySelector(".close-icon");
 
 menuToggle.addEventListener("click", () => {
-  hamburgerIcon.style.display = (hamburgerIcon.style.display === "none") ? "block" : "none";
-  closeIcon.style.display = (closeIcon.style.display === "block") ? "none" : "block";
-
-
+  hamburgerIcon.style.display =
+    hamburgerIcon.style.display === "none" ? "block" : "none";
+  closeIcon.style.display =
+    closeIcon.style.display === "block" ? "none" : "block";
 });
-
-
-
-
-
-
-
