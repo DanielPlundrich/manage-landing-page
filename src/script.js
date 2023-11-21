@@ -23,8 +23,15 @@ let swiper = new Swiper(".mySwiper", {
 
 function dropDownMenuMobile() {
   let menuLinks = document.querySelector(".mobile-menu-dropdown-content");
-  menuLinks.style.display =
-    menuLinks.style.display === "block" ? "none" : "block";
+
+  if (menuLinks.style.display === "block") {
+    menuLinks.style.display = "none";
+  } else {
+    menuLinks.style.display = "block";
+  }
+
+  // menuLinks.style.display =
+  //   menuLinks.style.display === "block" ? "none" : "block";
 }
 
 const menuToggle = document.querySelector(".menu-toggle");
